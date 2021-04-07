@@ -2,13 +2,20 @@
   color: #000000;
   font-size: 24px;
   box-sizing: border-box;
-  margin: 4px;
+  margin: 5px;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  padding: 2px;
   background-color: #98FB98;
+}
+
+.header,
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #pokemonSubmit {
@@ -25,6 +32,32 @@ body {
 
 h1 {
   font-size: 2em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+  background-color: #778899;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+}
+
+.footer-item {
+  display: flex;
+  background-color: #778899;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item a {
+  color: #000000;
+  background-color: #778899;
+  font-size: 60%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -58,6 +91,7 @@ h1 {
     border-radius: 10px;
     width: 65vw;
     padding: 2px;
+    margin-bottom: 75px;
   }
 
   #pokemonName {
@@ -83,10 +117,11 @@ h1 {
 
 @media only screen and (min-width: 768px) {
   #container {
-    margin-top: 70px;
+    margin-top: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 35px;
   }
 
   .pokedexPhoto img {
@@ -103,12 +138,12 @@ h1 {
     height: 650px;
     width: 350px;
     overflow-y: auto;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   #pokemonName {
     width: 350px;
-    height: 825px;
+    height: 860px;
     background-color: #FFFFFF;
     border: 5px solid #00BFFF;
     border-radius: 10px;
@@ -126,8 +161,8 @@ h1 {
     border: 2px solid #EF0F0F;
     border-radius: 8px;
     width: 370px;
+    margin-top: 9px;
     max-height: 550px;
-    margin-top: 8px;
     padding-top: 5px;
     margin-bottom: 20px;
   }
