@@ -1,0 +1,134 @@
+* {
+  color: #000000;
+  font-size: 24px;
+  box-sizing: border-box;
+  margin: 4px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #98FB98;
+}
+
+#pokemonSubmit {
+  background-color: #00FFFF;
+}
+
+#pokemonInput {
+  background-color: #FFFFFF;
+}
+
+.details {
+  background-color: !important #E0FFFF;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 767px) {
+  #container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .pokedexPhoto {
+    display: none;
+  }
+
+  #nameAndImage img {
+    width: 40vw;
+    background-color: #FFFFFF;
+  }
+
+  #pokeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EF0F0F;
+    border: 2px solid #EF0F0F;
+    border-radius: 10px;
+    width: 65vw;
+    padding: 2px;
+  }
+
+  #pokemonName {
+    height: 60vw;
+    width: 60vw;
+    background-color: #FFFFFF;
+    border: 5px solid #00BFFF;
+    border-radius: 10px;
+  }
+
+  #pokemonDetails {
+    display: flex;
+    flex-direction: column;
+    background-color: #E0FFFF;
+    border: 5px solid #00BFFF;
+    border-radius: 5px;
+    height: 60vw;
+    width: 60vw;
+    overflow-y: auto;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .pokedexPhoto img {
+    max-width: 375px;
+    max-height: 750px;
+  }
+
+  #pokemonDetails {
+    display: flex;
+    flex-direction: column;
+    background-color: #E0FFFF;
+    border: 5px solid #00BFFF;
+    border-radius: 5px;
+    height: 650px;
+    width: 350px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+  #pokemonName {
+    width: 350px;
+    height: 825px;
+    background-color: #FFFFFF;
+    border: 5px solid #00BFFF;
+    border-radius: 10px;
+  }
+
+  #nameAndImage img {
+    width: 200px;
+  }
+
+  #pokeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EF0F0F;
+    border: 2px solid #EF0F0F;
+    border-radius: 8px;
+    width: 370px;
+    max-height: 550px;
+    margin-top: 8px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Kevin's Pokedex</title>
+</head>
+
+<body>
+  <div class='body'>
+    <div class='header'>
+      <h1>Pokedex</h1>
+    </div>
+
+    <form>
+      <label>Enter a Pokemon's name</label>
+      <input id="pokemonInput" type="text"></input><br/>
+      <input id="pokemonSubmit" type="submit" value="Search Pokedex"></input>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+      <script src="script.js"></script>
+    </form>
+
+    <div id='container'>
+
+      <div class='pokedexPhoto'>
+        <img src='images/pokedex.jpg'/>
+      </div>
+
+      <div id='pokeContainer'>
+        <div id='pokemonName'>
+        </div>
+
+        <div id='pokemonDetails'>
+          <div class='details' id='heightAndWeight'>
+          </div>
+          <div class='details' id='types'>
+          </div>
+          <div class='details' id='baseStats'>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='pokedexPhoto' id='secondPhoto'>
+        <img src='images/pokedex.jpg'/>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
