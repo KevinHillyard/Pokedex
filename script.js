@@ -6,7 +6,7 @@ document.getElementById("pokemonSubmit").addEventListener("click", function(even
   }
   console.log(value);
 
-  const url = "https://pokeapi.co/api/v2/pokemon/" + value;
+  const url = "https://pokeapi.co/api/v2/pokemon/" + value.toLowerCase();
   fetch(url)
     .then(function(response) {
       return response.json();
