@@ -7,7 +7,7 @@
 
 body {
   padding: 2px;
-  background-color: #98FB98;
+  background-image: url(images/grass_2.jfif);
 }
 
 .header,
@@ -16,6 +16,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.header h1 {
+  color: #FFFFFF !important;
+}
+
+#label {
+  color: #FFFFFF !important;
 }
 
 #pokemonSubmit {
