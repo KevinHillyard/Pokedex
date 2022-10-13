@@ -5,9 +5,9 @@
   margin: 5px;
 }
 
-body {
+body { 
   padding: 2px;
-  background-image: url(images/grass_2.jfif);
+  background-image: url(images/grass2.jfif);
 }
 
 .header,
@@ -35,7 +35,7 @@ body {
 }
 
 .details {
-  background-color: !important #E0FFFF;
+  background-color: #E0FFFF;
 }
 
 h1 {
